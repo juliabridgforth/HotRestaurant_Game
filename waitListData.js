@@ -4,13 +4,13 @@ var waitingArray = [
       customerEmail: "demi@example.com",
       phoneNumber: "000-000-0000",
       customerID: "demiCool"
-    }
+    },
     {
       customerName: "Keri",
       customerEmail: "keri@example.com",
       phoneNumber: "000-000-0000",
       customerID: "keriCool"
-    }
+    },
     {
       customerName: "Julia",
       customerEmail: "julia@example.com",
