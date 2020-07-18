@@ -13,8 +13,8 @@
     <div class="jumbotron">
         <header><h1>Restaurant</h1></header>
         <h2>Make Your Reservation</h2>
-        <button id="view-btn">View Tables</button>
-        <button>Home</button>
+        <a href="tables.html"><button id="view-btn">View Tables</button></a>
+        <a href="home.html"><button id="reso">Home</button></a>
     </div>
     <!--end reso jumbotron-->
     <!--begin reso form-->
@@ -24,19 +24,19 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="name" class="form-control" id="" placeholder="Name">
+                        <input type="name" class="form-control" id="reserve-name" placeholder="Name">
                     </div>
                     <div class="form-group">
                         <label for="phonenumber">Phone Number</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                        <input type="number" class="form-control" id="reserve-phone" placeholder="Phone Number">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                        <input type="password" class="form-control" id="reserve-email" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="uniquieid">Unique ID</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Unique ID">
+                        <input type="password" class="form-control" id="reserve-unique-id" placeholder="Unique ID">
                     </div>
                     <button type="submit" class="btn btn-primary" id="add-btn">Submit</button>
                 </form>
@@ -49,3 +49,4 @@
 <script src="/add.js"></script>
 </body>
 </html>
+
