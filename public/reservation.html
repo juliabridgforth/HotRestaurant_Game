@@ -50,3 +50,39 @@
 </body>
 </html>
 
+<script type="text/javascript">
+    
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+  
+      //form elements
+      var newReservation = {
+        customerName: $("#reserve-name").val().trim(),
+        phoneNumber: $("#reserve-phone").val().trim(),
+        customerEmail: $("#reserve-email").val().trim(),
+        customerID: $("#reserve-unique-id").val().trim()
+      };
+  
+      console.log(newReservation);
+  
+      $.post("/api/tables", newReservation,
+        function(data) {
+  
+          if (data) {
+            alert("You got it dude.");
+          } else {
+            alert("You're names been added to the waitlist!");
+          }
+  
+          //clear da form out
+          $("#reserve-name").val("");
+          $("#reserve-phone").val("");
+          $("#reserve-email").val("");
+          $("#reserve-unique-id").val("");
+  
+        });
+  
+    });
+  
+  </script>
+
